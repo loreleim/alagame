@@ -12,13 +12,13 @@ export default class Quiz extends Component {
     };
   }
 
-  optionClick = (e, i) => {
-    console.log("this is the answer: " + e);
+  optionClick = (questionIndex, i) => {
+    console.log("this is the answer: " + questionIndex);
     console.log("clicked option:" + i);
     this.setState({
       optionCondition: true,
       clickedOption: i,
-      clickedCategory: e,
+      clickedCategory: questionIndex,
     });
   };
 
