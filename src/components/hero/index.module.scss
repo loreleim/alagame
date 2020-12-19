@@ -1,0 +1,14 @@
+@import "../../style/index.scss";
+@import "../../style/variables.scss";
+
+.heroContainer {
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.heroContainer h2 {
+  color: $darkRed;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
