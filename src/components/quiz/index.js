@@ -9,20 +9,27 @@ export default class Quiz extends Component {
       optionCondition: false,
       clickedOption: 0,
       clickedCategory: 0,
+      userChoices: [],
     };
   }
 
-  optionClick = (questionIndex, i) => {
+  optionClick = (questionIndex, selectedChoiceIndex, selectedCategory) => {
+    console.log("this is the category: " + selectedCategory);
     console.log("this is the answer: " + questionIndex);
-    console.log("clicked option:" + i);
+    console.log("clicked option:" + selectedChoiceIndex);
+    let newArray = this.state.userChoices;
+    newArray[questionIndex] = selectedCategory;
     this.setState({
       optionCondition: true,
-      clickedOption: i,
+      clickedOption: selectedChoiceIndex,
       clickedCategory: questionIndex,
+      userChoices: newArray
     });
   };
 
   render() {
+    console.log(this.state.userChoices);
+    console.log("this is the state: " + this.state.optionCondition)
     return (
       <div className={style.centerContainer}>
         {store.questions.map((questions, q) => (
