@@ -86,14 +86,6 @@ export default class Quiz extends Component {
             <div key={q}>
             <div className={style.categoryContainer}>
             <h2 className={style.questionText}>{questions.questionText}</h2>
-              {questions.answerOptions.map((answerOptions, i) => (
-                <div
-                  key={answerOptions.answerText}
-                  className={i === this.state.clickedOption && q === this.state.clickedCategory ? style.optionSelected : style.optionNotSelected}
-                  id = {q === 1 ? style.imageContainer:"" || q === 2 ? style.quoteContainer : ""} //this applies a style to certain indexes
-                  onClick={() => this.optionClick(q, i, answerOptions.category)}
-                >
-                <h5>{answerOptions.answerText}</h5>
               {questions.answerOptions.map((answerOptions, i) => {
               if (q === 1 || q === 3 || q === 5)
               return <div className={style.imageCard} onClick={() => this.optionClick(answerOptions.category, i, q)}>
