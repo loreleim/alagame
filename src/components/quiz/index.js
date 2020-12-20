@@ -17,13 +17,14 @@ export default class Quiz extends Component {
     };
   }
 
-  optionClick = (questionIndex, selectedChoiceIndex, selectedCategory) => {
+  optionClick = (questionIndex, selectedChoiceIndex, categoryIndex) => {
+    console.log("this is the selected Index: " + categoryIndex);
     let newArray = this.state.userChoices;
-    newArray[questionIndex] = selectedCategory;
+    newArray[categoryIndex] = questionIndex;
     this.setState({
       optionCondition: true,
       clickedOption: selectedChoiceIndex,
-      clickedCategory: questionIndex,
+      clickedCategory: categoryIndex,
       userChoices: newArray
     });
 
