@@ -70,29 +70,14 @@ export default class Quiz extends Component {
     this.setState({highestCategory: checkUserChoices})
   }
 
+  renderResults = () => {
+    return <Results categoryProp={this.state.highestCategory} messageProp={this.state.resultsMessage} />
+  }
+
   render() {
-    console.log(this.state.userChoices);
-    console.log("this is the state: " + this.state.optionCondition)
     return (
-      <div className={style.centerContainer}>
-        {store.questions.map((questions, q) => (
-          <div className={style.questionContainer}>
             <h2 className={style.questionText}>{questions.questionText}</h2>
-            {questions.answerOptions.map((answerOptions, i) => (
-              <div
-                key={answerOptions.answerText}
-                className={
-                  this.state.optionCondition && i === this.state.clickedOption && q === this.state.clickedCategory
-                    ? style.optionSelected
-                    : style.optionNotSelected
-                }
-                onClick={() => this.optionClick(q, i)}
-              >
-                <h4>{answerOptions.answerText}</h4>
-              </div>
-            ))}
-          </div>
-        ))}
+        {resultsShown && this.renderResults()}
       </div>
     );
   }
