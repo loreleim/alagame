@@ -78,7 +78,7 @@ export default class Quiz extends Component {
 
   render() {
     const {resultsShown} = this.state;
-    console.log(this.state.userChoices.length);
+    console.log(this.state.userChoices);
     return (
       <div>
         <div className={style.centerContainer}>
