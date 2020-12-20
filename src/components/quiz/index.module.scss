@@ -1,3 +1,70 @@
 @import "../../style/index.scss";
 @import "../.././style/variables.scss";
 
+.questionText {
+  color: $darkRed;
+}
+
+.centerContainer h2 {
+  margin-bottom: 1rem;
+}
+
+.centerContainer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.categoryContainer {
+  margin-bottom: 3rem;
+}
+
+.optionNotSelected {
+  font-family: "Open Sans", sans-serif;
+  margin: 0.5rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  text-align: left;
+  width: 150px;
+  height: 150px;
+  border-radius: 1rem;
+  background-color: #de648a;
+  color: white;
+  display: inline-block;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: ease-in-out 0.3s all;
+  vertical-align: top;
+}
+
+.optionNotSelected:hover {
+  background-color: #b83e64;
+}
+
+.optionSelected {
+  font-family: "Open Sans", sans-serif;
+  margin: 0.5rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  text-align: left;
+  width: 150px;
+  height: 150px;
+  border-radius: 1rem;
+  background-color: $green;
+  color: white;
+  display: inline-block;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: ease-in-out 0.3s all;
+  vertical-align: top;
+}
+
+#imageContainer {
+  color: black;
+}
+
+#quoteContainer {
+  font-size: 0.6rem;
+  letter-spacing: 0.5px;
+}
