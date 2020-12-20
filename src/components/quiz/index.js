@@ -1,22 +1,23 @@
 import React, { Component } from "react";
 import style from "../quiz/index.module.scss"
 import store from "../../database";
+import Results from "../results";
 
 export default class Quiz extends Component {
   constructor(props) {
     super(props);
     this.state = {
       optionCondition: false,
-      clickedOption: 0,
-      clickedCategory: 0,
+      clickedOption: -1,
+      clickedCategory: -1,
       userChoices: [],
+      resultsShown: false, 
+      highestCategory: "",
+      resultsMessage: "",
     };
   }
 
   optionClick = (questionIndex, selectedChoiceIndex, selectedCategory) => {
-    console.log("this is the category: " + selectedCategory);
-    console.log("this is the answer: " + questionIndex);
-    console.log("clicked option:" + selectedChoiceIndex);
     let newArray = this.state.userChoices;
     newArray[questionIndex] = selectedCategory;
     this.setState({
@@ -75,8 +76,29 @@ export default class Quiz extends Component {
   }
 
   render() {
+    const {resultsShown} = this.state;
+    console.log(this.state.userChoices.length);
     return (
+      <div>
+        <div className={style.centerContainer}>
+          {store.questions.map((questions, q) => (
+            <div key={q}>
+            <div className={style.categoryContainer}>
             <h2 className={style.questionText}>{questions.questionText}</h2>
+              {questions.answerOptions.map((answerOptions, i) => (
+                <div
+                  key={answerOptions.answerText}
+                  className={i === this.state.clickedOption && q === this.state.clickedCategory ? style.optionSelected : style.optionNotSelected}
+                  id = {q === 1 ? style.imageContainer:"" || q === 2 ? style.quoteContainer : ""} //this applies a style to certain indexes
+                  onClick={() => this.optionClick(q, i, answerOptions.category)}
+                >
+                <h5>{answerOptions.answerText}</h5>
+                </div>
+              ))}
+            </div>
+            </div>
+          ))}
+        </div>
         {resultsShown && this.renderResults()}
       </div>
     );
