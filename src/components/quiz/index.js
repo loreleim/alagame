@@ -94,8 +94,27 @@ export default class Quiz extends Component {
                   onClick={() => this.optionClick(q, i, answerOptions.category)}
                 >
                 <h5>{answerOptions.answerText}</h5>
+              {questions.answerOptions.map((answerOptions, i) => {
+              if (q === 1 || q === 3 || q === 5)
+              return <div className={style.imageCard} onClick={() => this.optionClick(answerOptions.category, i, q)}>
+                <div className={style.imageCrop}>
+                <img src={answerOptions.image} alt={"test"}/>
                 </div>
-              ))}
+                <div className={style.overlay}/>
+                <div className={style.cardDetails} id = {q === 3 || q === 5 ? style.gifCaption : ""}>
+                  <h5>{answerOptions.answerText}</h5>
+                </div>
+              </div>
+              if (q === 0 || q === 2 || q === 4 || q === 6)
+                return (
+                  <div className={this.state.optionCondition && i === this.state.clickedOption && q === this.state.clickedCategory ? style.optionSelected: style.optionNotSelected}
+                    id = {q === 2 ? style.quoteContainer : "" || q === 4 ? style.dayContainer : "" || q === 6 ? style.patronContainer: ""}
+                    onClick={() => this.optionClick(answerOptions.category, i, q)}>
+                    <h5>{answerOptions.answerText}</h5>
+                  </div>
+                );
+                return <div></div>
+            })}
             </div>
             </div>
           ))}
