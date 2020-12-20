@@ -27,20 +27,25 @@ class Database {
             questionText:
               "The word that best describes me  is...",
             answerOptions: [
-              { answerText: "Organized", 
+              { answerText: "Organized",
+                image: "https://media.giphy.com/media/BXgfFotA3amW6GjJPj/giphy.gif", 
                 category: "event planning" },
               {
                 answerText: "Connected",
+                image: "https://media.giphy.com/media/S3gnHTbb3QYEQ2aDcu/giphy.gif", 
                 category: "community knowledge"
               },
               { answerText: "Creative", 
+                image: "https://media.giphy.com/media/Ux9XDxUga9e80/giphy.gif", 
                 category: "creativity" },
               {
                 answerText: "Social",
+                image: "https://media.giphy.com/media/kyLYXonQYYfwYDIeZl/giphy.gif", 
                 category: "interpersonal skills"
               },
               {
                 answerText: "Persuasive",
+                image: "https://media.giphy.com/media/WRQBXSCnEFJIuxktnw/giphy.gif", 
                 category: "outreach & marketing"
               }
             ]
@@ -71,19 +76,24 @@ class Database {
           questionText: "The aspect of  my job that I enjoy the most is..?",
             answerOptions: [
               { answerText: "Planning! I never met a list I didn’t love.", 
+                image: "https://media.giphy.com/media/B7o99rIuystY4/giphy.gif",
                 category: "event planning" },
               {
                 answerText: "Hearing about all that's happening in our community and listening to various discussions",
+                image: "https://media.giphy.com/media/xT8qAXAERiWiL17OYU/giphy.gif",
                 category: "community knowledge"
               },
               { answerText: "Figuring out creative new ways to present information or solve problems", 
+                image: "https://media.giphy.com/media/JWF7fOo3XyLgA/giphy.gif",
                 category: "creativity" },
               {
                 answerText: "Talking to patrons about anything and everything",
+                image: "https://media.giphy.com/media/l0HlSF89is7bCAjte/giphy.gif",
                 category: "interpersonal skills"
               },
               {
                 answerText: "Bragging  about everything the library has to offer",
+                image: "https://media.giphy.com/media/TEj9VRTz1Xtqre3kUT/giphy.gif",
                 category: "outreach & marketing"
               }
             ]
@@ -114,19 +124,24 @@ class Database {
               "Other than the library, my favorite part of school was...",
             answerOptions: [
               { answerText: "School supplies! Trapper keepers, post-it notes, highlighters, oh my!", 
+                image: "https://media.giphy.com/media/3vnHhhpVXP8lBrOQhH/giphy.gif",
                 category: "event planning" },
               {
                 answerText: "Field trips and guest speakers",
+                image: "https://media.giphy.com/media/vhpwk2TOw2hq0/giphy.gif",
                 category: "community knowledge"
               },
               { answerText: "Art, music or creative writing -- something where I could express myself", 
+                image: "https://media.giphy.com/media/l0ckewhzX2dDtPb1VQ/giphy.gif",
                 category: "creativity" },
               {
                 answerText: "Lunch, recess and passing notes in class",
+                image: "https://media.giphy.com/media/9Dg8hPEsQIzcUZPrV4/giphy.gif",
                 category: "interpersonal skills"
               },
               {
                 answerText: "Fundraisers. I got the award for most candy bars sold every time.",
+                image: "https://media.giphy.com/media/26u4exk4zsAqPcq08/giphy.gif",
                 category: "outreach & marketing"
               }
             ]
