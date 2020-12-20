@@ -25,6 +25,9 @@ export default class Quiz extends Component {
       clickedCategory: questionIndex,
       userChoices: newArray
     });
+
+    this.check();
+
     if (this.state.highestCategory === "event planning") {
       this.setState({
         resultsMessage: "You don’t have to be a celebrity wedding planner to be able to plan for a successful conversation. You are already oriented to what it takes to think about the logistics of a good gathering, from working out the details of spaces, attendees, and speakers to making programs accessible, appealing, and culturally appropriate for all. Whether you’ve ever led a public program or not, you have the ability to think organizationally and focus your efforts on a clear goal, which are essential skills for creating a successful event."})
@@ -50,6 +53,22 @@ export default class Quiz extends Component {
       this.setState({resultsShown: true})
     }
   };
+
+  check = () => {
+    var localCheckArray = {};
+    var checkUserChoices = this.state.userChoices[0],
+      maxCount = 1;
+    for (var i = 0; i < this.state.userChoices.length; i++) {
+      var individualString = this.state.userChoices[i];
+      if (localCheckArray[individualString] == null) localCheckArray[individualString] = 1;
+      else localCheckArray[individualString]++;
+      if (localCheckArray[individualString] > maxCount) {
+        checkUserChoices = individualString;
+        maxCount = localCheckArray[individualString];
+      }
+    }
+    this.setState({highestCategory: checkUserChoices})
+  }
 
   render() {
     console.log(this.state.userChoices);
