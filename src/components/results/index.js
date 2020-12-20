@@ -9,9 +9,17 @@ export default class Results extends Component {
     };
   }
 
+  scrollToBottom = () => {
+    this.resultsEnd.scrollIntoView({ behavior: "smooth" });
+  }
+  
+  componentDidMount() {
+    this.scrollToBottom();
+  }
+
   render() {
     return (
-      <div className={style.resultsContainer}>
+      <div className={style.resultsContainer} ref={(el) => { this.resultsEnd = el}}>
         <div className={style.resultsHeader}>
           <h2>Your Strength Score!</h2>
           <p>{store.resultText[0].headerText}</p>
