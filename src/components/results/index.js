@@ -18,7 +18,6 @@ export default class Results extends Component {
   }
 
   render() {
-    console.log("this is the image link" + this.props.image);
     return (
       <div className={style.resultsContainer} ref={(el) => { this.resultsEnd = el}}>
         <div className={style.resultsHeader}>

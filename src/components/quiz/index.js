@@ -19,7 +19,6 @@ export default class Quiz extends Component {
   }
 
   optionClick = (questionIndex, selectedChoiceIndex, categoryIndex) => {
-    console.log("this is the selected Index: " + categoryIndex);
     let newArray = this.state.userChoices;
     newArray[categoryIndex] = questionIndex;
     this.setState({
@@ -84,7 +83,6 @@ export default class Quiz extends Component {
 
   render() {
     const {resultsShown} = this.state;
-    console.log(this.state.userChoices);
     return (
       <div>
         <div className={style.centerContainer}>
