@@ -56,7 +56,7 @@ export default class Quiz extends Component {
         imageProp: "https://media.giphy.com/media/mwwEcxbodLHIk/giphy.gif",
         resultsMessage: "From friends, to family members, to patrons, you know who needs to hear about what! You’ve got essential skills to be able to connect and engage with others, which is what will help to bring a diverse group of patrons and partners in to participate in a robust conversation."})
     }
-    if (this.state.userChoices.length === 7) {
+    if (this.state.userChoices.length === 7 && this.state.userChoices[5] !== undefined && this.state.userChoices[4] !== undefined && this.state.userChoices[3] !== undefined && this.state.userChoices[2] !== undefined && this.state.userChoices[1] !== undefined && this.state.userChoices[0] !== undefined) {
       this.setState({resultsShown: true})
     }
   };
