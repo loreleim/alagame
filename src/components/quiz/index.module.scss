@@ -152,6 +152,35 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+  .optionSelected,
+  .optionNotSelected {
+    width: 250px;
+    height: 250px;
+    font-size: 1.5rem;
+  }
+  #quoteContainer {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+  #dayContainer {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+  #patronContainer {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+  }
+  .imageCard {
+    width: 250px;
+  }
+  .imageCrop {
+    width: 250px;
+    height: 250px;
+  }
+  #gifCaption {
+    height: 100px;
+    font-size: 0.9rem;
+  }
 }
 
 /* Larger than Desktop HD */
