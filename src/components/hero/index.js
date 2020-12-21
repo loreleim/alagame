@@ -4,10 +4,6 @@ import style from "../hero/index.module.scss"
 
 export default class Hero extends Component {
 
-  optionClick = () => {
-    console.log("begin");
-  };
-
   render() {
     return (
       <div className={style.heroContainer}>
