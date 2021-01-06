@@ -43,8 +43,7 @@ export default class Quiz extends Component {
     if (this.state.highestCategory === "creativity") {
       this.setState({
         imageProp: "https://media.giphy.com/media/3o6EhJCaTvilFWuy2I/giphy.gif",
-        resultsMessage: "What’s great about you is that you see challenges as opportunities to make something new and interesting. You’re also adept at coming up with unique solutions to issues. That’s exactly what is needed to be able to facilitate a constructive conversation.",
-        resultsShown: true})
+        resultsMessage: "What’s great about you is that you see challenges as opportunities to make something new and interesting. You’re also adept at coming up with unique solutions to issues. That’s exactly what is needed to be able to facilitate a constructive conversation."})
     }
     if (this.state.highestCategory === "interpersonal skills") {
       this.setState({
