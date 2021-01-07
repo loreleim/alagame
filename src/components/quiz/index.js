@@ -28,7 +28,9 @@ export default class Quiz extends Component {
       userChoices: newArray
     });
 
-    this.check();
+    store.questions[categoryIndex].answerOptions[selectedChoiceIndex].isSelected = !store.questions[categoryIndex].answerOptions[selectedChoiceIndex].isSelected;
+
+    //this.check();
 
     if (this.state.highestCategory === "event planning") {
       this.setState({
