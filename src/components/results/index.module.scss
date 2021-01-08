@@ -18,6 +18,13 @@
   color: $darkRed;
 }
 
+.uniqueContainer {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 1px 4px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+}
+
 .uniqueContainer h4 {
   font-size: 2rem;
   color: $red;
