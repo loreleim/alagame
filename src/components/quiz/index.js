@@ -10,6 +10,7 @@ export default class Quiz extends Component {
       clickedOption: -1,
       clickedCategory: -1,
       userChoices: [],
+      selectedCategories: [],
       resultsShown: false, 
       highestCategory: "",
       resultsMessage: "",
@@ -18,12 +19,14 @@ export default class Quiz extends Component {
   }
 
   optionClick = (questionIndex, selectedChoiceIndex, categoryIndex) => {
+
     this.setState({
       clickedOption: selectedChoiceIndex,
       clickedCategory: categoryIndex,
     });
 
     store.questions[categoryIndex].answerOptions[selectedChoiceIndex].isSelected = !store.questions[categoryIndex].answerOptions[selectedChoiceIndex].isSelected;
+  };
 
   calculateResuls = () => {
     for (var i = 0; i < store.questions.length; i++) {
@@ -89,6 +92,7 @@ export default class Quiz extends Component {
 
   render() {
     const {resultsShown} = this.state;
+    console.log(this.state.selectedCategories);
     return (
       <div>
         <div className={style.centerContainer}>
