@@ -98,6 +98,11 @@
   transition: width 0.2 ease-in;
 }
 
+/*Description Container*/
+.descriptionContainer {
+  font-size: 0.75rem;
+}
+
 /*Media Queries*/
 /* Larger than tablet (also point when grid becomes active) */
 @media (min-width: 680px) {
