@@ -34,6 +34,10 @@ export default class Quiz extends Component {
         }
       }
     }
+    var count = {};
+    this.state.userChoices.forEach(function(i) { count[i] = (count[i]||0) + 1;});
+    this.setState({resultsShown: true, selectedCategories: count})
+  }
 
     if (this.state.highestCategory === "event planning") {
       this.setState({
