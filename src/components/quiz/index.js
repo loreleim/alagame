@@ -7,7 +7,6 @@ export default class Quiz extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      optionCondition: false,
       clickedOption: -1,
       clickedCategory: -1,
       userChoices: [],
@@ -19,18 +18,13 @@ export default class Quiz extends Component {
   }
 
   optionClick = (questionIndex, selectedChoiceIndex, categoryIndex) => {
-    let newArray = this.state.userChoices;
-    newArray[categoryIndex] = questionIndex;
     this.setState({
-      optionCondition: true,
       clickedOption: selectedChoiceIndex,
       clickedCategory: categoryIndex,
-      userChoices: newArray
     });
 
     store.questions[categoryIndex].answerOptions[selectedChoiceIndex].isSelected = !store.questions[categoryIndex].answerOptions[selectedChoiceIndex].isSelected;
 
-    //this.check();
 
     if (this.state.highestCategory === "event planning") {
       this.setState({
@@ -57,12 +51,7 @@ export default class Quiz extends Component {
         imageProp: "https://media.giphy.com/media/mwwEcxbodLHIk/giphy.gif",
         resultsMessage: "From friends, to family members, to patrons, you know who needs to hear about what! You’ve got essential skills to be able to connect and engage with others, which is what will help to bring a diverse group of patrons and partners in to participate in a robust conversation."})
     }
-    if (this.state.userChoices.length === 7 && this.state.userChoices[5] !== undefined && this.state.userChoices[4] !== undefined && this.state.userChoices[3] !== undefined && this.state.userChoices[2] !== undefined && this.state.userChoices[1] !== undefined && this.state.userChoices[0] !== undefined) {
-      this.setState({resultsShown: true})
-    }
-  };
 
-  check = () => {
     var localCheckArray = {};
     var checkUserChoices = this.state.userChoices[0],
       maxCount = 1;
@@ -76,10 +65,8 @@ export default class Quiz extends Component {
       }
     }
     this.setState({highestCategory: checkUserChoices})
-  }
 
   renderResults = () => {
-    return <Results categoryProp={this.state.highestCategory} messageProp={this.state.resultsMessage} image={this.state.imageProp}/>
   }
 
   render() {
