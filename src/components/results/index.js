@@ -28,66 +28,113 @@ export default class Results extends Component {
           <div className={style.calculationsContainer}>
             {/*Event Planning*/}
             <div className={style.scoreContainer}>
-              <div className={style.aboveTimelineContainer}>
-                <h2 className={style.categoryTitle}>Event Planning</h2>
-                <h2 className={style.skillRating}>{Math.round((this.props.countProp.event / store.questions.length) * 100)}% strength score</h2>
+              <div className={style.imageAndText}>
+                <div className={style.resultsImage}>
+                <img src="https://media.giphy.com/media/121cS334yDC0Hm/giphy.gif" alt={"gif of results"}/>
+                </div>
               </div>
-              <div className={style.timelineContainer}>
-                <div className={style.timeline}></div>
-                <div className={style.timelineFill} style={{transform: " translateY(-2vh) scaleX(" + this.props.countProp.event / store.questions.length + ")"}}/>
+              <div className={style.detailsContainer}>
+                <div className={style.aboveTimelineContainer}>
+                  <h2 className={style.categoryTitle}>Event Planning</h2>
+                  <h2 className={style.skillRating}>{Math.round((this.props.countProp.event / store.questions.length) * 100)}% strength score</h2>
+                </div>
+                <div className={style.timelineContainer}>
+                  <div className={style.timeline}></div>
+                  <div className={style.timelineFill} style={{transform: " translateY(-2vh) scaleX(" + this.props.countProp.event / store.questions.length + ")"}}/>
+                </div>
+                <div className={style.descriptionContainer}>
+                  <p>{store.resultText[0].answerOptions[0].answerText}</p>
+                </div>
               </div>
             </div>
+            <hr/>
             {/*Community Knowledge*/}
             <div className={style.scoreContainer}>
-              <div className={style.aboveTimelineContainer}>
-                <h2 className={style.categoryTitle}>Community Knowledge</h2>
-                <h2 className={style.skillRating}>{Math.round((this.props.countProp.community / store.questions.length) * 100)}% strength score</h2>
+              <div className={style.imageAndText}>
+                <div className={style.resultsImage}>
+                <img src="https://media.giphy.com/media/3o6ozkeXSb0Cm25CzS/giphy.gif" alt={"gif of results"}/>
+                </div>
               </div>
-              <div className={style.timelineContainer}>
-                <div className={style.timeline}></div>
-                <div className={style.timelineFill} style={{transform: " translateY(-2vh) scaleX(" + this.props.countProp.community / store.questions.length + ")"}}/>
+              <div className={style.detailsContainer}>
+                <div className={style.aboveTimelineContainer}>
+                  <h2 className={style.categoryTitle}>Community Knowledge</h2>
+                  <h2 className={style.skillRating}>{Math.round((this.props.countProp.community / store.questions.length) * 100)}% strength score</h2>
+                </div>
+                <div className={style.timelineContainer}>
+                  <div className={style.timeline}></div>
+                  <div className={style.timelineFill} style={{transform: " translateY(-2vh) scaleX(" + this.props.countProp.community / store.questions.length + ")"}}/>
+                </div>
+                <div className={style.descriptionContainer}>
+                  <p>{store.resultText[0].answerOptions[1].answerText}</p>
+                </div>
               </div>
             </div>
+            <hr/>
             {/*Creativity*/}
             <div className={style.scoreContainer}>
-              <div className={style.aboveTimelineContainer}>
-                <h2 className={style.categoryTitle}>Creativity</h2>
-                <h2 className={style.skillRating}>{Math.round((this.props.countProp.creativity / store.questions.length) * 100)}% strength score</h2>
+              <div className={style.imageAndText}>
+                <div className={style.resultsImage}>
+                <img src="https://media.giphy.com/media/3o6EhJCaTvilFWuy2I/giphy.gif" alt={"gif of results"}/>
+                </div>
               </div>
-              <div className={style.timelineContainer}>
-                <div className={style.timeline}></div>
-                <div className={style.timelineFill} style={{transform: " translateY(-2vh) scaleX(" + this.props.countProp.creativity / store.questions.length + ")"}}/>
+              <div className={style.detailsContainer}>
+                <div className={style.aboveTimelineContainer}>
+                  <h2 className={style.categoryTitle}>Creativity</h2>
+                  <h2 className={style.skillRating}>{Math.round((this.props.countProp.creativity / store.questions.length) * 100)}% strength score</h2>
+                </div>
+                <div className={style.timelineContainer}>
+                  <div className={style.timeline}></div>
+                  <div className={style.timelineFill} style={{transform: " translateY(-2vh) scaleX(" + this.props.countProp.creativity / store.questions.length + ")"}}/>
+                </div>
+                <div className={style.descriptionContainer}>
+                  <p>{store.resultText[0].answerOptions[2].answerText}</p>
+                </div>
               </div>
             </div>
+            <hr/>
             {/*Interpersonal*/}
             <div className={style.scoreContainer}>
-              <div className={style.aboveTimelineContainer}>
-                <h2 className={style.categoryTitle}>Interpersonal Skills</h2>
-                <h2 className={style.skillRating}>{Math.round((this.props.countProp.interpersonal / store.questions.length) * 100)}% strength score</h2>
+              <div className={style.imageAndText}>
+                <div className={style.resultsImage}>
+                <img src="https://media.giphy.com/media/3o6EhCj5lUv8xv2l1K/giphy.gif" alt={"gif of results"}/>
+                </div>
               </div>
-              <div className={style.timelineContainer}>
-                <div className={style.timeline}></div>
-                <div className={style.timelineFill} style={{transform: " translateY(-2vh) scaleX(" + this.props.countProp.interpersonal / store.questions.length + ")"}}/>
+              <div className={style.detailsContainer}>
+                <div className={style.aboveTimelineContainer}>
+                  <h2 className={style.categoryTitle}>Interpersonal Skills</h2>
+                  <h2 className={style.skillRating}>{Math.round((this.props.countProp.interpersonal / store.questions.length) * 100)}% strength score</h2>
+                </div>
+                <div className={style.timelineContainer}>
+                  <div className={style.timeline}></div>
+                  <div className={style.timelineFill} style={{transform: " translateY(-2vh) scaleX(" + this.props.countProp.interpersonal / store.questions.length + ")"}}/>
+                </div>
+                <div className={style.descriptionContainer}>
+                  <p>{store.resultText[0].answerOptions[2].answerText}</p>
+                </div>
               </div>
             </div>
+            <hr/>
             {/*Outreach*/}
             <div className={style.scoreContainer}>
-              <div className={style.aboveTimelineContainer}>
-                <h2 className={style.categoryTitle}>Outreach</h2>
-                <h2 className={style.skillRating}>{Math.round((this.props.countProp.outreach / store.questions.length) * 100)}% strength score</h2>
+              <div className={style.imageAndText}>
+                <div className={style.resultsImage}>
+                <img src="https://media.giphy.com/media/mwwEcxbodLHIk/giphy.gif" alt={"gif of results"}/>
+                </div>
               </div>
-              <div className={style.timelineContainer}>
-                <div className={style.timeline}></div>
-                <div className={style.timelineFill} style={{transform: " translateY(-2vh) scaleX(" + this.props.countProp.outreach / store.questions.length + ")"}}/>
+              <div className={style.detailsContainer}>
+                <div className={style.aboveTimelineContainer}>
+                  <h2 className={style.categoryTitle}>Outreach &amp; Marketing</h2>
+                  <h2 className={style.skillRating}>{Math.round((this.props.countProp.outreach / store.questions.length) * 100)}% strength score</h2>
+                </div>
+                <div className={style.timelineContainer}>
+                  <div className={style.timeline}></div>
+                  <div className={style.timelineFill} style={{transform: " translateY(-2vh) scaleX(" + this.props.countProp.outreach / store.questions.length + ")"}}/>
+                </div>
+                <div className={style.descriptionContainer}>
+                  <p>{store.resultText[0].answerOptions[3].answerText}</p>
+                </div>
               </div>
             </div>
-          </div>
-          <h4>{this.props.highestCatProp}</h4>
-          <div className={style.imageAndText}>
-            <div className={style.resultsImage}>
-            <img src={this.props.image} alt={"gif of results"}/>
-            </div>
-            <p>{this.props.messageProp}</p>
           </div>
         </div>
       </div>
