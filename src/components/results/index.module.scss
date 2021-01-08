@@ -106,6 +106,9 @@
 /*Media Queries*/
 /* Larger than tablet (also point when grid becomes active) */
 @media (min-width: 680px) {
+  .descriptionContainer {
+    font-size: 1rem;
+  }
   .resultsHeader {
     text-align: center;
     margin-bottom: 2rem;
@@ -116,7 +119,7 @@
   }
 
   .resultsImage {
-    width: 40%;
+    //width: 40%;
     display: inline-block;
   }
 
@@ -138,7 +141,7 @@
   }
 
   .uniqueContainer {
-    width: 80%;
+    width: fit-content;
     margin: 0 auto;
   }
 
