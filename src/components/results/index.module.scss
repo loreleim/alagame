@@ -155,14 +155,14 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+  .uniqueContainer {
+    width: 40%;
+    margin: 0 auto;
+  }
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-  .uniqueContainer {
-    width: 70%;
-    margin: 0 auto;
-  }
 }
 
 /* For TV Screens & Projectors */
