@@ -161,6 +161,25 @@
   font-size: 0.75rem;
 }
 
+.calculateButton {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  color: white;
+  background-color: $red;
+  height: 5rem;
+  border: none;
+  border-radius: 5rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
 /*Media Queries*/
 /* Larger than tablet (also point when grid becomes active) */
 @media (min-width: 680px) {
