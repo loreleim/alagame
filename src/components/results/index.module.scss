@@ -7,6 +7,20 @@
   margin: 0 auto;
   padding: 1rem;
   overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.resultsContainer hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(43, 104, 142, 0),
+    rgba(43, 104, 142, 0.75),
+    rgba(43, 104, 142, 0)
+  );
 }
 
 .resultsHeader {
