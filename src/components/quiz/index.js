@@ -76,6 +76,7 @@ export default class Quiz extends Component {
     this.setState({highestCategory: checkUserChoices})
 
   renderResults = () => {
+    return <Results countProp={this.state.selectedCategories} highestCatProp={this.state.highestCategory} messageProp={this.state.resultsMessage} image={this.state.imageProp}/>
   }
 
   render() {
