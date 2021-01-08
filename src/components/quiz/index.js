@@ -67,6 +67,7 @@ export default class Quiz extends Component {
     }
   }
 
+  /*check = () => {
     var localCheckArray = {};
     var checkUserChoices = this.state.userChoices[0],
       maxCount = 1;
@@ -80,6 +81,7 @@ export default class Quiz extends Component {
       }
     }
     this.setState({highestCategory: checkUserChoices})
+  }*/
 
   renderResults = () => {
     return <Results countProp={this.state.selectedCategories} highestCatProp={this.state.highestCategory} messageProp={this.state.resultsMessage} image={this.state.imageProp}/>
