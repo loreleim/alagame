@@ -38,7 +38,10 @@ export default class Quiz extends Component {
       }
     }
     var count = {};
-    this.state.userChoices.forEach(function(i) { count[i] = (count[i]||0) + 1;});
+    this.state.userChoices.forEach((i) => { count[i] = (count[i]||0) + 1;});
+
+    //this.decideHighest();
+
     this.setState({resultsShown: true, selectedCategories: count})
   }
 
