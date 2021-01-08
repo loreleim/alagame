@@ -104,6 +104,7 @@ export default class Quiz extends Component {
             </div>
           ))}
         </div>
+        <button className={style.calculateButton} onClick={this.calculateResuls}>Calculate Results</button>
         {resultsShown && this.renderResults()}
       </div>
     );
