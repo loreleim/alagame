@@ -25,6 +25,15 @@ export default class Quiz extends Component {
 
     store.questions[categoryIndex].answerOptions[selectedChoiceIndex].isSelected = !store.questions[categoryIndex].answerOptions[selectedChoiceIndex].isSelected;
 
+  calculateResuls = () => {
+    for (var i = 0; i < store.questions.length; i++) {
+      for (var j = 0; j < store.questions[i].answerOptions.length; j++) {
+        let findAllTrue = store.questions[i].answerOptions[j].isSelected;
+        if (findAllTrue === true) {
+          this.state.userChoices.push(store.questions[i].answerOptions[j].category);
+        }
+      }
+    }
 
     if (this.state.highestCategory === "event planning") {
       this.setState({
