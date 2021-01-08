@@ -39,6 +39,7 @@ export default class Quiz extends Component {
     this.setState({resultsShown: true, selectedCategories: count})
   }
 
+  decideHighest = () => {
     if (this.state.highestCategory === "event planning") {
       this.setState({
         imageProp: "https://media.giphy.com/media/121cS334yDC0Hm/giphy.gif",
@@ -64,6 +65,7 @@ export default class Quiz extends Component {
         imageProp: "https://media.giphy.com/media/mwwEcxbodLHIk/giphy.gif",
         resultsMessage: "From friends, to family members, to patrons, you know who needs to hear about what! You’ve got essential skills to be able to connect and engage with others, which is what will help to bring a diverse group of patrons and partners in to participate in a robust conversation."})
     }
+  }
 
     var localCheckArray = {};
     var checkUserChoices = this.state.userChoices[0],
