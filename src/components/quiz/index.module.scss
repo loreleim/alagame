@@ -187,10 +187,17 @@
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+  .centerContainer {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+  .centerContainer {
+    width: 90%;
+  }
   .optionSelected,
   .optionNotSelected {
     width: 250px;
@@ -224,8 +231,21 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
+  .centerContainer {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1550px) {
+  .centerContainer {
+    width: 55%;
+  }
 }
 
 /* For TV Screens & Projectors */
-@media (min-width: 2000px) {
+@media (min-width: 1990px) {
+  .centerContainer {
+    width: 50%;
+  }
 }
