@@ -54,7 +54,7 @@ class Database {
               },
               {
                 answerText: "Persuasive",
-                image: "https://media.giphy.com/media/WRQBXSCnEFJIuxktnw/giphy.gif", 
+                image: "https://media.giphy.com/media/XABTVorVODddu/giphy.gif", 
                 category: "outreach",
                 isSelected: false
               }
