@@ -46,34 +46,6 @@ export default class Quiz extends Component {
   }
 
   decideHighest = () => {
-    if (this.state.highestCategory === "event planning") {
-      this.setState({
-        imageProp: "https://media.giphy.com/media/121cS334yDC0Hm/giphy.gif",
-        resultsMessage: "You don’t have to be a celebrity wedding planner to plan a successful conversation. One of your strengths is that you are drawn to order and organization — great skills for a library worker, especially when it comes to facilitation. Even if your most formal event-planning experience has been hosting a child’s birthday party or planning a trip, you have the basic skills needed to handle the logistics of a discussion."})
-    }
-    if (this.state.highestCategory === "community knowledge") {
-      this.setState({
-        imageProp: "https://media.giphy.com/media/3o6ozkeXSb0Cm25CzS/giphy.gif",
-        resultsMessage: "Whether you are just good at getting to know people, you’ve lived here for years, or you’ve run for office in this town, you know this community! This is critical to leading strong conversations. You’ve shown that you have the background to build relationships and partnerships that strengthen your library’s programs and make the offerings of the library accessible to all."})
-    }
-    if (this.state.highestCategory === "creativity") {
-      this.setState({
-        imageProp: "https://media.giphy.com/media/3o6EhJCaTvilFWuy2I/giphy.gif",
-        resultsMessage: "What’s great about you is that you see challenges as opportunities to make something new and interesting. You’re also adept at coming up with unique solutions to issues. That’s exactly what is needed to be able to facilitate a constructive conversation."})
-    }
-    if (this.state.highestCategory === "interpersonal skills") {
-      this.setState({
-        imageProp: "https://media.giphy.com/media/3o6EhCj5lUv8xv2l1K/giphy.gif",
-        resultsMessage: "Facilitating a conversation will necessitate communication with potential partners, stakeholders, and community members at all steps of the process. Fortunately, you’re able to draw on your significant social skills and ability to meaningfully connect with others to make sure everyone has what they need to participate in a fruitful dialogue."})
-    }
-    if (this.state.highestCategory === "outreach & marketing") {
-      this.setState({
-        imageProp: "https://media.giphy.com/media/mwwEcxbodLHIk/giphy.gif",
-        resultsMessage: "From friends, to family members, to patrons, you know who needs to hear about what! You’ve got essential skills to be able to connect and engage with others, which is what will help to bring a diverse group of patrons and partners in to participate in a robust conversation."})
-    }
-  }
-
-  decideHighest = () => {
     var localCheckArray = {};
     var checkUserChoices = this.state.userChoices,
       maxCount = 1;
@@ -104,7 +76,7 @@ export default class Quiz extends Component {
             <div className={style.categoryContainer}>
             <h2 className={style.questionText}>{questions.questionText}</h2>
               {questions.answerOptions.map((answerOptions, i) => {
-              if (q === 1 || q === 3 || q === 5)
+              if (q === 1 || q === 2 || q === 4)
               return <div className={style.imageCard} onClick={() => this.optionClick(answerOptions.category, i, q)}>
                 <div className={style.imageCrop}>
                 <img src={answerOptions.image} alt={"test"}/>
@@ -114,7 +86,7 @@ export default class Quiz extends Component {
                   <h5>{answerOptions.answerText}</h5>
                 </div>
               </div>
-              if (q === 0 || q === 2 || q === 4 || q === 6)
+              if (q === 0 || q === 3 || q === 5)
                 return (
                   <div className={answerOptions.isSelected === false ? style.optionNotSelected: style.optionSelected}
                     id = {q === 2 ? style.quoteContainer : "" || q === 4 ? style.dayContainer : "" || q === 6 ? style.patronContainer: ""}
