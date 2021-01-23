@@ -90,7 +90,7 @@ class Database {
         {
           questionText: "The aspect of  my job that I enjoy the most is..?",
             answerOptions: [
-              { answerText: "Planning! I never met a list I didn’t love.", 
+              { answerText: "Planning! I never met a list I didn’t love", 
                 image: "https://media.giphy.com/media/B7o99rIuystY4/giphy.gif",
                 category: "event",
                 isSelected: false },
