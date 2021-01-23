@@ -28,7 +28,7 @@ export default class Quiz extends Component {
     store.questions[categoryIndex].answerOptions[selectedChoiceIndex].isSelected = !store.questions[categoryIndex].answerOptions[selectedChoiceIndex].isSelected;
   };
 
-  calculateResuls = () => {
+  calculateResults = () => {
     for (var i = 0; i < store.questions.length; i++) {
       for (var j = 0; j < store.questions[i].answerOptions.length; j++) {
         let findAllTrue = store.questions[i].answerOptions[j].isSelected;
@@ -144,7 +144,7 @@ export default class Quiz extends Component {
             </div>
           ))}
         </div>
-        <button className={style.calculateButton} onClick={this.calculateResuls}>Calculate Results</button>
+        <button className={style.calculateButton} onClick={this.calculateResults}>Calculate Results</button>
         {resultsShown && this.renderResults()}
       </div>
     );
