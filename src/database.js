@@ -61,33 +61,6 @@ class Database {
             ]
         },
         {
-            questionText:
-              "The quote that speaks to me best is...",
-            answerOptions: [
-              { answerText: "There is a hunger in this digital age to hear authors together, to participate in programs, to just be in a place, a community space. -Carla Hayden", 
-                category: "event",
-                isSelected: false },
-              {
-                answerText: "In the nonstop tsunami of global information, librarians provide us with floaties and teach us to swim. – Linton Weeks",
-                category: "community",
-                isSelected: false
-              },
-              { answerText: "The classroom was a jail of other people’s interests. The library was open, unending, free. ― Ta-Nehisi Coates", 
-                category: "creativity",
-                isSelected: false },
-              {
-                answerText: "The truth is libraries are raucous clubhouses for free speech, controversy and community. – Paula Poundstone",
-                category: "interpersonal",
-                isSelected: false
-              },
-              {
-                answerText: "If you want a future of libraries, it is within you, the librarians. If you want a healthy community that seeks out knowledge, and seeks informed conversation, then advocate for it beyond your walls. -R. David Lankes",
-                category: "outreach",
-                isSelected: false
-              }
-            ]
-        },
-        {
           questionText: "The aspect of  my job that I enjoy the most is..?",
             answerOptions: [
               { answerText: "Planning! I never met a list I didn’t love", 
@@ -210,24 +183,24 @@ class Database {
           headerText:
             "You possess skills, experiences, and/or mindsets that make you good at...",
           answerOptions: [
-            { answerText: "You don’t have to be a celebrity wedding planner to be able to plan for a successful conversation. You are already oriented to what it takes to think about the logistics of a good gathering, from working out the details of spaces, attendees, and speakers to making programs accessible, appealing, and culturally appropriate for all. Whether you’ve ever led a public program or not, you have the ability to think organizationally and focus your efforts on a clear goal, which are essential skills for creating a successful event.", 
+            { answerText: "You don’t have to be a celebrity wedding planner to plan a successful conversation. One of your strengths is that you are drawn to order and organization — great skills for a library worker, especially when it comes to facilitation. Even if your most formal event-planning experience has been hosting a child’s birthday party or planning a trip, you have the basic skills needed to handle the logistics of a discussion.", 
               category: "event",
               isSelected: false },
             {
-              answerText: "Whether you are just good at getting to know people, you’ve lived here for years, or you’ve run for office in this town, you know this community! This is critical to leading strong conversations. You’ve shown that you have the background to build relationships and partnerships that strengthen your library’s programs and make the offerings of the library accessible to all.",
+              answerText: "Maybe you are naturally a “people person.” Or maybe you’ve lived in your community for years. Whatever the case, one thing is for certain — you know your community! Community knowledge is one of the strongest skills you can bring to the table when leading a conversation. Your ability to build relationships and partnerships — and knowing “who’s who” — will make it so much easier for you to bring people together.",
               category: "community",
               isSelected: false
             },
-            { answerText: "What’s great about you is that you see challenges as opportunities to make something new and interesting. You’re also adept at coming up with unique solutions to issues. That’s exactly what is needed to be able to facilitate a constructive conversation.", 
+            { answerText: "You’re prone to thinking outside of the box, and that’s a great strength when it comes to leading a conversation. Every situation comes with challenges; what’s great about you is that you see challenges as opportunities to do something new and interesting. So color outside the lines and use your creativity to find new ways to spark people’s interests in a topic — it will make your conversation stronger!", 
               category: "creativity",
               isSelected: false },
             {
-              answerText: "Facilitating a conversation will necessitate communication with potential partners, stakeholders, and community members at all steps of the process. Fortunately, you’re able to draw on your significant social skills and ability to meaningfully connect with others to make sure everyone has what they need to participate in a fruitful dialogue.",
+              answerText: "Not everyone is drawn to working with people, but you are. This is a massive strength in conversation planning and one that shouldn’t be discounted. Your solid interpersonal and conversational skills will make your job as a facilitator easier — maybe even fun!",
               category: "interpersonal",
               isSelected: false
             },
             {
-              answerText: "From friends, to family members, to patrons, you know who needs to hear about what! You’ve got essential skills to be able to connect and engage with others, which is what will help to bring a diverse group of patrons and partners in to participate in a robust conversation.",
+              answerText: "Are you a Twitter junkie? Do you have a way with words? Maybe you the kid that was always setting up a lemonade stand? However you gained your marketing skills, they will serve you well when it comes to planning a conversation — from getting people in the door to telling your community what you learned.",
               category: "outreach",
               isSelected: false
             }
