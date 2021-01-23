@@ -9,7 +9,7 @@ class Database {
               category: "event",
               isSelected: false },
             {
-              answerText: "Building partnerships out in the community",
+              answerText: "Building partnerships in the community",
               category: "community", 
               isSelected: false
             },
@@ -95,12 +95,12 @@ class Database {
                 category: "event",
                 isSelected: false },
               {
-                answerText: "Hearing about all that's happening in our community and listening to various discussions",
+                answerText: "Hearing about all that's happening in our community",
                 image: "https://media.giphy.com/media/xT8qAXAERiWiL17OYU/giphy.gif",
                 category: "community",
                 isSelected: false
               },
-              { answerText: "Figuring out creative new ways to present information or solve problems", 
+              { answerText: "Figuring out creative new ways to find information or solve problems", 
                 image: "https://media.giphy.com/media/JWF7fOo3XyLgA/giphy.gif",
                 category: "creativity",
                 isSelected: false },
@@ -121,11 +121,11 @@ class Database {
         {
           questionText: "On days off from work, I like to...",
             answerOptions: [
-              { answerText: "Stick to a schedule. Errands, social events, I get it all done!", 
+              { answerText: "Stick to a schedule. Errands, social events, I get it all done", 
                 category: "event",
                 isSelected: false },
               {
-                answerText: "Explore a part of my community that I’ve never been to before (or visit old favorites)",
+                answerText: "Explore a part of my community that I’ve never been to before – or visit old favorites",
                 category: "community",
                 isSelected: false
               },
@@ -148,7 +148,7 @@ class Database {
             questionText:
               "Other than the library, my favorite part of school was...",
             answerOptions: [
-              { answerText: "School supplies! Trapper keepers, post-it notes, highlighters, oh my!", 
+              { answerText: "School supplies! Trapper keepers, post-it notes, highlighters, oh my", 
                 image: "https://media.giphy.com/media/3vnHhhpVXP8lBrOQhH/giphy.gif",
                 category: "event",
                 isSelected: false },
@@ -169,7 +169,7 @@ class Database {
                 isSelected: false
               },
               {
-                answerText: "Fundraisers. I got the award for most candy bars sold every time.",
+                answerText: "Fundraisers. I got the award for most candy bars sold every time",
                 image: "https://media.giphy.com/media/26u4exk4zsAqPcq08/giphy.gif",
                 category: "outreach",
                 isSelected: false
