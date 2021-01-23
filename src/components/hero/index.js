@@ -8,8 +8,8 @@ export default class Hero extends Component {
     return (
       <div className={style.heroContainer}>
         <div className={style.heroLeft}>
-          <h2>Planning And Facilitating A Community Program Can Feel Intimidating,</h2>
-          <p>and many of us don't feel like we're prepared. The following quiz can help you investigate which of the facilitation skills you already have, even if you've never thought about them before!</p>
+          <h2>Do You Have What It Takes to Lead Conversations?</h2>
+          <p>Answer These 6 Questions to Find Out</p>
         </div>
         <HeroSVG className={style.heroImage}></HeroSVG>
       </div>
