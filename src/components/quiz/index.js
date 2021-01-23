@@ -49,7 +49,7 @@ export default class Quiz extends Component {
     if (this.state.highestCategory === "event planning") {
       this.setState({
         imageProp: "https://media.giphy.com/media/121cS334yDC0Hm/giphy.gif",
-        resultsMessage: "You don’t have to be a celebrity wedding planner to be able to plan for a successful conversation. You are already oriented to what it takes to think about the logistics of a good gathering, from working out the details of spaces, attendees, and speakers to making programs accessible, appealing, and culturally appropriate for all. Whether you’ve ever led a public program or not, you have the ability to think organizationally and focus your efforts on a clear goal, which are essential skills for creating a successful event."})
+        resultsMessage: "You don’t have to be a celebrity wedding planner to plan a successful conversation. One of your strengths is that you are drawn to order and organization — great skills for a library worker, especially when it comes to facilitation. Even if your most formal event-planning experience has been hosting a child’s birthday party or planning a trip, you have the basic skills needed to handle the logistics of a discussion."})
     }
     if (this.state.highestCategory === "community knowledge") {
       this.setState({
