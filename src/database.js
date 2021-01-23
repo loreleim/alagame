@@ -164,7 +164,7 @@ class Database {
                 isSelected: false },
               {
                 answerText: "Lunch, recess and passing notes in class",
-                image: "https://media.giphy.com/media/9Dg8hPEsQIzcUZPrV4/giphy.gif",
+                image: "https://media.giphy.com/media/xT1Ra4pzewEzZmUUGQ/giphy.gif",
                 category: "interpersonal",
                 isSelected: false
               },
