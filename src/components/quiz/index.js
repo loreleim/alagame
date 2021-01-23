@@ -89,22 +89,6 @@ export default class Quiz extends Component {
     this.setState({highestCategory: checkUserChoices})
   }
 
-  /*check = () => {
-    var localCheckArray = {};
-    var checkUserChoices = this.state.userChoices[0],
-      maxCount = 1;
-    for (var i = 0; i < this.state.userChoices.length; i++) {
-      var individualString = this.state.userChoices[i];
-      if (localCheckArray[individualString] == null) localCheckArray[individualString] = 1;
-      else localCheckArray[individualString]++;
-      if (localCheckArray[individualString] > maxCount) {
-        checkUserChoices = individualString;
-        maxCount = localCheckArray[individualString];
-      }
-    }
-    this.setState({highestCategory: checkUserChoices})
-  }*/
-
   renderResults = () => {
     return <Results countProp={this.state.selectedCategories} highestCatProp={this.state.highestCategory} messageProp={this.state.resultsMessage} image={this.state.imageProp}/>
   }
