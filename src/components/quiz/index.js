@@ -114,7 +114,7 @@ export default class Quiz extends Component {
     return (
       <div>
         <div className={style.centerContainer}>
-          <h3 className={style.instructionsContainer}>Read through the following and check all answers that apply to you!</h3>
+          <h3 className={style.instructionsContainer}>Check all answers that apply!</h3>
           {store.questions.map((questions, q) => (
             <div key={q}>
             <div className={style.categoryContainer}>
