@@ -109,7 +109,7 @@ export default class Results extends Component {
                   <div className={style.timelineFill} style={{transform: " translateY(-2vh) scaleX(" + this.props.countProp.interpersonal / store.questions.length + ")"}}/>
                 </div>
                 <div className={style.descriptionContainer}>
-                  <p>{store.resultText[0].answerOptions[2].answerText}</p>
+                  <p>{store.resultText[0].answerOptions[3].answerText}</p>
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@ export default class Results extends Component {
                   <div className={style.timelineFill} style={{transform: " translateY(-2vh) scaleX(" + this.props.countProp.outreach / store.questions.length + ")"}}/>
                 </div>
                 <div className={style.descriptionContainer}>
-                  <p>{store.resultText[0].answerOptions[3].answerText}</p>
+                  <p>{store.resultText[0].answerOptions[4].answerText}</p>
                 </div>
               </div>
             </div>
