@@ -10,6 +10,7 @@ export default class Hero extends Component {
         <div className={style.heroLeft}>
           <h2>Do You Have What It Takes to Lead Conversations?</h2>
           <p>Answer These 6 Questions to Find Out</p>
+          <button className={style.heroButton} onClick={()=> console.log("hello")}>Begin</button>
         </div>
         <HeroSVG className={style.heroImage}></HeroSVG>
       </div>
