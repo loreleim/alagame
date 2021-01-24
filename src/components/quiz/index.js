@@ -37,10 +37,12 @@ export default class Quiz extends Component {
         }
       }
     }
+    var initialize = {event: 0, community: 0, creativity: 0, interpersonal: 0, outreach: 0 }
     var count = {};
     this.state.userChoices.forEach((i) => { count[i] = (count[i]||0) + 1;});
+    var combined = {...initialize, ...count};
 
-    this.setState({resultsShown: true, selectedCategories: count})
+    this.setState({resultsShown: true, selectedCategories: combined})
   }
 
   renderResults = () => {
