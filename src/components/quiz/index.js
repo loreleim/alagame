@@ -64,7 +64,7 @@ export default class Quiz extends Component {
                 <img src={answerOptions.image} alt={"test"}/>
                 </div>
                 <div className={answerOptions.isSelected === false ? style.overlay: style.selectedOverlay}/>
-                <div className={style.cardDetails} id = {q === 3 || q === 5 ? style.gifCaption : ""}>
+                <div className={style.cardDetails} id = {q === 2 || q === 4 ? style.gifCaption : ""}>
                   <h5>{answerOptions.answerText}</h5>
                 </div>
               </div>
