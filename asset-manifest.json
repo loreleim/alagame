@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/alagame/static/css/main.7d3dd86c.chunk.css",
-    "main.js": "/alagame/static/js/main.8a2a3862.chunk.js",
-    "main.js.map": "/alagame/static/js/main.8a2a3862.chunk.js.map",
+    "main.css": "/alagame/static/css/main.2a60e105.chunk.css",
+    "main.js": "/alagame/static/js/main.10933018.chunk.js",
+    "main.js.map": "/alagame/static/js/main.10933018.chunk.js.map",
     "runtime-main.js": "/alagame/static/js/runtime-main.b9cf0717.js",
     "runtime-main.js.map": "/alagame/static/js/runtime-main.b9cf0717.js.map",
-    "static/js/2.ca60e5dc.chunk.js": "/alagame/static/js/2.ca60e5dc.chunk.js",
-    "static/js/2.ca60e5dc.chunk.js.map": "/alagame/static/js/2.ca60e5dc.chunk.js.map",
+    "static/js/2.2957186a.chunk.js": "/alagame/static/js/2.2957186a.chunk.js",
+    "static/js/2.2957186a.chunk.js.map": "/alagame/static/js/2.2957186a.chunk.js.map",
     "index.html": "/alagame/index.html",
-    "static/css/main.7d3dd86c.chunk.css.map": "/alagame/static/css/main.7d3dd86c.chunk.css.map",
-    "static/js/2.ca60e5dc.chunk.js.LICENSE.txt": "/alagame/static/js/2.ca60e5dc.chunk.js.LICENSE.txt",
+    "static/css/main.2a60e105.chunk.css.map": "/alagame/static/css/main.2a60e105.chunk.css.map",
+    "static/js/2.2957186a.chunk.js.LICENSE.txt": "/alagame/static/js/2.2957186a.chunk.js.LICENSE.txt",
     "static/media/alaLogo.d44b536f.svg": "/alagame/static/media/alaLogo.d44b536f.svg",
     "static/media/heroImage.ba1fee39.svg": "/alagame/static/media/heroImage.ba1fee39.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.b9cf0717.js",
-    "static/js/2.ca60e5dc.chunk.js",
-    "static/css/main.7d3dd86c.chunk.css",
-    "static/js/main.8a2a3862.chunk.js"
+    "static/js/2.2957186a.chunk.js",
+    "static/css/main.2a60e105.chunk.css",
+    "static/js/main.10933018.chunk.js"
   ]
 }
