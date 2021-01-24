@@ -135,6 +135,12 @@ export default class Results extends Component {
                 </div>
               </div>
             </div>
+            <hr/>
+            {/*External Link*/}
+            <div className={style.resultsHeader} id={style.bottom}>
+              <h2>“Want to learn more about how these skills can help you lead a conversation in the library?</h2>
+              <p>Take the free asynchronous <a href="http://www.ala.org/tools/librariestransform/libraries-transforming-communities/online-learning" rel="noreferrer" target="_blank">Libraries Transforming Communities: Facilitation Skills for Small and Rural Libraries eCourse.”</a></p>
+            </div>
           </div>
         </div>
       </div>
