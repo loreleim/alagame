@@ -24,11 +24,11 @@
 
 .optionNotSelected {
   font-family: "Open Sans", sans-serif;
-  margin: 0.5rem;
+  margin: 0.25rem;
   padding: 1rem;
   text-align: left;
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   border-radius: 1rem;
   background-color: #de648a;
   color: white;
@@ -46,11 +46,11 @@
 
 .optionSelected {
   font-family: "Open Sans", sans-serif;
-  margin: 0.5rem;
+  margin: 0.25rem;
   padding: 1rem;
   text-align: left;
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   border-radius: 1rem;
   background-color: $green;
   color: white;
@@ -75,9 +75,9 @@
 .imageCard {
   position: relative;
   font-family: "Open Sans", sans-serif;
-  margin: 0.5rem;
+  margin: 0.25rem;
   text-align: left;
-  width: 150px;
+  width: 130px;
   height: 100%;
   border-radius: 1rem;
   background-color: white;
@@ -112,8 +112,8 @@
 }
 
 #gifCaption {
-  height: 80px;
-  font-size: 0.6rem;
+  height: 90px;
+  font-size: 0.7rem;
 }
 
 .overlay {
@@ -179,6 +179,20 @@
 
 /*Media Queries*/
 /* Larger than tablet (also point when grid becomes active) */
+
+@media (min-width: 360px) {
+  .optionNotSelected,
+  .optionSelected {
+    width: 150px;
+    height: 150px;
+    margin: 0.5rem;
+  }
+  .imageCard {
+    width: 150px;
+    margin: 0.5rem;
+  }
+}
+
 @media (min-width: 680px) {
 }
 
