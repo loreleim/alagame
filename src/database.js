@@ -32,41 +32,39 @@ class Database {
             questionText:
               "The word that best describes me  is...",
             answerOptions: [
-              { answerText: "Organized",
-                image: "https://media.giphy.com/media/BXgfFotA3amW6GjJPj/giphy.gif", 
-                category: "event",
-                isSelected: false },
               {
                 answerText: "Connected",
                 image: "https://media.giphy.com/media/S3gnHTbb3QYEQ2aDcu/giphy.gif", 
                 category: "community",
                 isSelected: false
               },
-              { answerText: "Creative", 
-                image: "https://media.giphy.com/media/Ux9XDxUga9e80/giphy.gif", 
-                category: "creativity",
-                isSelected: false },
-              {
-                answerText: "Social",
-                image: "https://media.giphy.com/media/kyLYXonQYYfwYDIeZl/giphy.gif", 
-                category: "interpersonal",
-                isSelected: false
+              { answerText: "Organized",
+                image: "https://media.giphy.com/media/BXgfFotA3amW6GjJPj/giphy.gif", 
+                category: "event",
+                isSelected: false 
               },
               {
                 answerText: "Persuasive",
                 image: "https://media.giphy.com/media/XABTVorVODddu/giphy.gif", 
                 category: "outreach",
                 isSelected: false
-              }
+              },
+              {
+                answerText: "Social",
+                image: "https://media.giphy.com/media/kyLYXonQYYfwYDIeZl/giphy.gif", 
+                category: "interpersonal",
+                isSelected: false
+              },
+              { answerText: "Creative", 
+                image: "https://media.giphy.com/media/Ux9XDxUga9e80/giphy.gif", 
+                category: "creativity",
+                isSelected: false 
+              },
             ]
         },
         {
           questionText: "The aspect of  my job that I enjoy the most is..?",
             answerOptions: [
-              { answerText: "Planning! I never met a list I didn’t love", 
-                image: "https://media.giphy.com/media/B7o99rIuystY4/giphy.gif",
-                category: "event",
-                isSelected: false },
               {
                 answerText: "Hearing about all that's happening in our community",
                 image: "https://media.giphy.com/media/xT8qAXAERiWiL17OYU/giphy.gif",
@@ -83,6 +81,12 @@ class Database {
                 category: "interpersonal",
                 isSelected: false
               },
+              { 
+                answerText: "Planning! I never met a list I didn’t love", 
+                image: "https://media.giphy.com/media/B7o99rIuystY4/giphy.gif",
+                category: "event",
+                isSelected: false 
+              },
               {
                 answerText: "Bragging  about everything the library has to offer",
                 image: "https://media.giphy.com/media/TEj9VRTz1Xtqre3kUT/giphy.gif",
@@ -94,9 +98,6 @@ class Database {
         {
           questionText: "On days off from work, I like to...",
             answerOptions: [
-              { answerText: "Stick to a schedule. Errands, social events, I get it all done", 
-                category: "event",
-                isSelected: false },
               {
                 answerText: "Explore a part of my community that I’ve never been to before – or visit old favorites",
                 category: "community",
@@ -110,6 +111,10 @@ class Database {
                 category: "interpersonal",
                 isSelected: false
               },
+              { answerText: "Stick to a schedule. Errands, social events, I get it all done", 
+                category: "event",
+                isSelected: false 
+              },
               {
                 answerText: "Post on social media",
                 category: "outreach",
@@ -121,6 +126,18 @@ class Database {
             questionText:
               "Other than the library, my favorite part of school was...",
             answerOptions: [
+              { 
+                answerText: "Art, music or creative writing -- something where I could express myself", 
+                image: "https://media.giphy.com/media/l0ckewhzX2dDtPb1VQ/giphy.gif",
+                category: "creativity",
+                isSelected: false 
+              },
+              {
+                answerText: "Lunch, recess and passing notes in class",
+                image: "https://media.giphy.com/media/xT1Ra4pzewEzZmUUGQ/giphy.gif",
+                category: "interpersonal",
+                isSelected: false
+              },
               { answerText: "School supplies! Trapper keepers, post-it notes, highlighters, oh my", 
                 image: "https://media.giphy.com/media/3vnHhhpVXP8lBrOQhH/giphy.gif",
                 category: "event",
@@ -129,16 +146,6 @@ class Database {
                 answerText: "Field trips and guest speakers",
                 image: "https://media.giphy.com/media/vhpwk2TOw2hq0/giphy.gif",
                 category: "community",
-                isSelected: false
-              },
-              { answerText: "Art, music or creative writing -- something where I could express myself", 
-                image: "https://media.giphy.com/media/l0ckewhzX2dDtPb1VQ/giphy.gif",
-                category: "creativity",
-                isSelected: false },
-              {
-                answerText: "Lunch, recess and passing notes in class",
-                image: "https://media.giphy.com/media/xT1Ra4pzewEzZmUUGQ/giphy.gif",
-                category: "interpersonal",
                 isSelected: false
               },
               {
@@ -153,14 +160,6 @@ class Database {
             questionText:
               "To help patrons answer questions, I...",
             answerOptions: [
-              { answerText: "Go right into planning mode, building a list of search phrases that could  help them find answers", 
-                category: "event",
-                isSelected: false },
-              {
-                answerText: "Draw on my knowledge of the town and local resources to help them",
-                category: "community",
-                isSelected: false
-              },
               { answerText: "Brainstorm some ideas/resources they may not have thought about yet", 
                 category: "creativity",
                 isSelected: false },
@@ -173,7 +172,15 @@ class Database {
                 answerText: "Provide some resources that relate to their questions and let them know about other things that they may be interested in",
                 category: "outreach",
                 isSelected: false
-              }
+              },
+              { answerText: "Go right into planning mode, building a list of search phrases that could  help them find answers", 
+                category: "event",
+                isSelected: false },
+              {
+                answerText: "Draw on my knowledge of the town and local resources to help them",
+                category: "community",
+                isSelected: false
+              },
             ]
         },
       ];
