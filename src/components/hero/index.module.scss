@@ -15,6 +15,13 @@
   font-size: 2rem;
 }
 
+.heroLeft {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .heroContainer p {
   line-height: 2.25rem;
 }
@@ -23,14 +30,45 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: scale(1);
+  transform: scale(0.9);
+}
+
+.heroButton {
+  display: block;
+  width: 100%;
+  color: white;
+  margin-top: 2rem;
+  background-color: $red;
+  height: 5rem;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.heroButton:hover {
+  background-color: $green;
+  transition: ease-in-out 0.3s all;
 }
 
 /*Media Queries*/
 /* Larger than tablet (also point when grid becomes active) */
-@media (min-width: 680px) {
+@media (min-width: 480px) {
+  .heroLeft {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 620px) {
   .heroImage {
-    height: 60vh;
+    height: 50vh;
     right: 0;
     bottom: 0;
     margin: 0 auto;
@@ -52,26 +90,35 @@
 
     bottom: 8vh;
     transform: scale(1.3) translateX(55%);
-    position: relative;
+    position: absolute;
   }
 
   .heroLeft {
-    width: 50%;
-    display: inline-block;
-    transform: translateY(50%);
+    left: 0;
+    margin-left: 4rem;
+    width: 40%;
+    transform: translateY(10%);
+  }
+
+  .heroButton {
+    width: 300px;
   }
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1388px) {
-  .heroImage {
-    transform: scale(1.3) translate(20%, 40%);
+  .heroContainer h2 {
+    font-size: 3rem;
   }
 
-  .heroLeft {
-    margin-left: 4rem;
-    width: 40%;
-    transform: translateY(10%);
+  .heroContainer p {
+    font-size: 1.5rem;
+  }
+
+  .heroImage {
+    bottom: 20vh;
+    right: 10vw;
+    transform: scale(2);
   }
 }
 

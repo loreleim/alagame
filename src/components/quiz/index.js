@@ -73,7 +73,7 @@ export default class Quiz extends Component {
               if (q === 0 || q === 3 || q === 5)
                 return (
                   <div className={answerOptions.isSelected === false ? style.optionNotSelected: style.optionSelected}
-                    id = {q === 2 ? style.quoteContainer : "" || q === 4 ? style.dayContainer : "" || q === 6 ? style.patronContainer: ""}
+                    id = {q === 2 ? style.quoteContainer : "" || q === 3 ? style.dayContainer : "" || q === 5 ? style.patronContainer: ""}
                     onClick={() => this.optionClick(answerOptions.category, i, q)}>
                     <h5>{answerOptions.answerText}</h5>
                   </div>
