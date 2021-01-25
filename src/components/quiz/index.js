@@ -18,6 +18,14 @@ export default class Quiz extends Component {
     };
   }
 
+  scrollToTop = () => {
+    this.refStart.scrollIntoView({behavior: "smooth"});
+  }
+
+  componentDidMount() {
+    this.scrollToTop();
+  }
+
   optionClick = (questionIndex, selectedChoiceIndex, categoryIndex) => {
 
     this.setState({
@@ -52,7 +60,7 @@ export default class Quiz extends Component {
   render() {
     const {resultsShown} = this.state;
     return (
-      <div>
+      <div ref={(el) => {this.refStart = el}}>
         <div className={style.centerContainer}>
           <h3 className={style.instructionsContainer}>Check all answers that apply!</h3>
           {store.questions.map((questions, q) => (
