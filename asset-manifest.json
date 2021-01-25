@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/alagame/static/css/main.2a60e105.chunk.css",
-    "main.js": "/alagame/static/js/main.10933018.chunk.js",
-    "main.js.map": "/alagame/static/js/main.10933018.chunk.js.map",
+    "main.js": "/alagame/static/js/main.a6531969.chunk.js",
+    "main.js.map": "/alagame/static/js/main.a6531969.chunk.js.map",
     "runtime-main.js": "/alagame/static/js/runtime-main.b9cf0717.js",
     "runtime-main.js.map": "/alagame/static/js/runtime-main.b9cf0717.js.map",
     "static/js/2.2957186a.chunk.js": "/alagame/static/js/2.2957186a.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b9cf0717.js",
     "static/js/2.2957186a.chunk.js",
     "static/css/main.2a60e105.chunk.css",
-    "static/js/main.10933018.chunk.js"
+    "static/js/main.a6531969.chunk.js"
   ]
 }
