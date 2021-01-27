@@ -26,7 +26,7 @@ export default class Hero extends Component {
         <div className={style.heroContainer}>
           <div className={style.heroLeft}>
             <h2>Do You Have What It Takes to Lead Conversations?</h2>
-            <p>Answer These 6 Questions to Find Out</p>
+            <p>Answer these 6 questions to find out!</p>
             <button className={style.heroButton} onClick={()=> this.beginButton()}>Begin</button>
           </div>
           <HeroSVG className={style.heroImage}></HeroSVG>
