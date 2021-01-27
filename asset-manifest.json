@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/alagame/static/css/main.2a60e105.chunk.css",
-    "main.js": "/alagame/static/js/main.a6531969.chunk.js",
-    "main.js.map": "/alagame/static/js/main.a6531969.chunk.js.map",
+    "main.css": "/alagame/static/css/main.59b4bef4.chunk.css",
+    "main.js": "/alagame/static/js/main.6c8be760.chunk.js",
+    "main.js.map": "/alagame/static/js/main.6c8be760.chunk.js.map",
     "runtime-main.js": "/alagame/static/js/runtime-main.b9cf0717.js",
     "runtime-main.js.map": "/alagame/static/js/runtime-main.b9cf0717.js.map",
     "static/js/2.2957186a.chunk.js": "/alagame/static/js/2.2957186a.chunk.js",
     "static/js/2.2957186a.chunk.js.map": "/alagame/static/js/2.2957186a.chunk.js.map",
     "index.html": "/alagame/index.html",
-    "static/css/main.2a60e105.chunk.css.map": "/alagame/static/css/main.2a60e105.chunk.css.map",
+    "static/css/main.59b4bef4.chunk.css.map": "/alagame/static/css/main.59b4bef4.chunk.css.map",
     "static/js/2.2957186a.chunk.js.LICENSE.txt": "/alagame/static/js/2.2957186a.chunk.js.LICENSE.txt",
     "static/media/alaLogo.d44b536f.svg": "/alagame/static/media/alaLogo.d44b536f.svg",
     "static/media/heroImage.ba1fee39.svg": "/alagame/static/media/heroImage.ba1fee39.svg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.b9cf0717.js",
     "static/js/2.2957186a.chunk.js",
-    "static/css/main.2a60e105.chunk.css",
-    "static/js/main.a6531969.chunk.js"
+    "static/css/main.59b4bef4.chunk.css",
+    "static/js/main.6c8be760.chunk.js"
   ]
 }
