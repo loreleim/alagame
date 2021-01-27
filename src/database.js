@@ -222,7 +222,7 @@ class Database {
               isSelected: false
             },
             {
-              answerText: "Are you a Twitter junkie? Do you have a way with words? Maybe you the kid that was always setting up a lemonade stand? However you gained your marketing skills, they will serve you well when it comes to planning a conversation — from getting people in the door to telling your community what you learned.",
+              answerText: "Are you a Twitter junkie? Do you have a way with words? Maybe you're the kid that was always setting up a lemonade stand? However you gained your marketing skills, they will serve you well when it comes to planning a conversation — from getting people in the door to telling your community what you learned.",
               category: "outreach",
               isSelected: false
             }
