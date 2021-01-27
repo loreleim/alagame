@@ -3,7 +3,7 @@ class Database {
       this.questions = [
         {
           questionText:
-            "My favorite part of my job in the library is...",
+            "The best part of my job at the library is...",
           answerOptions: [
             { answerText: "Developing new programs", 
               category: "event",
