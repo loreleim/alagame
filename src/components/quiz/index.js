@@ -71,6 +71,7 @@ export default class Quiz extends Component {
               if (q === 1 || q === 2 || q === 4)
               return <div className={style.imageCard} onClick={() => this.optionClick(answerOptions.category, i, q)}>
                 <div className={style.imageCrop}>
+                <p id = {q === 2 || q === 4 ? style.gifSource : style.sourceContainer}>{answerOptions.source}</p>
                 <img src={answerOptions.image} alt={"test"}/>
                 </div>
                 <div className={answerOptions.isSelected === false ? style.overlay: style.selectedOverlay}/>

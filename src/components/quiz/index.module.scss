@@ -105,6 +105,22 @@
   display: block;
 }
 
+#sourceContainer {
+  color: white;
+  position: absolute;
+  font-size: 0.4rem;
+  bottom: 6vh;
+  right: 10px;
+}
+
+#gifSource {
+  color: white;
+  position: absolute;
+  font-size: 0.4rem;
+  bottom: 11vh;
+  right: 10px;
+}
+
 #gifCaption {
   height: 90px;
   font-size: 0.7rem;
