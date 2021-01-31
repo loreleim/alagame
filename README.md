@@ -2,7 +2,7 @@
 
 Convergence Design Lab x American Libraries Association - interactive tool to provide urban librarians the support in designing community programs & events
 
-- [Overview](#overview)
+* [Overview](#overview)
 
 ## Installing
 
@@ -26,4 +26,4 @@ This web app takes advantage of the following React.js features
 - [ ] combining objects with spread ... operators
 
 
-- [Back to Top](#alaquiz)
+* [Back to Top](#ala-quiz)
