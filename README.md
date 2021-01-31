@@ -2,20 +2,11 @@
 
 Convergence Design Lab x American Libraries Association - interactive tool to provide urban librarians the support in designing community programs & events
 
-1. [Installing](#installing)
 1. [Overview](#overview)
+1. [Installing for Development](#installing)
+1. [Running](#running)
 
-## Installing
 
-```
-npm install
-```
-
-## Running
-
-```
-npm run start
-```
 ## Overview
 This web app takes advantage of the following React.js features
 
@@ -27,4 +18,27 @@ This web app takes advantage of the following React.js features
 - [ ] combining objects with spread ... operators
 
 
-1. [Back to Top](#ala-quiz)
+## Installing for Development
+
+Make sure to create a new branch if developing. Do all atomic pushes in here.
+```
+github desktop > new branch > name it [firstname-develop]
+```
+Go to folder directory
+```
+cd alagame
+```
+& install all dependencies
+```
+npm install
+```
+
+## Running
+
+```
+npm run start
+```
+
+
+
+[Back to Top](#ala-quiz)
