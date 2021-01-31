@@ -24,3 +24,6 @@ This web app takes advantage of the following React.js features
 - [ ] isSelected() counting algorithm
 - [ ] useRefs for scroll on click
 - [ ] combining objects with spread ... operators
+
+
+- [Back to Top](#ala quiz)
