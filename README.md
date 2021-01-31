@@ -2,6 +2,8 @@
 
 Convergence Design Lab x American Libraries Association - interactive tool to provide urban librarians the support in designing community programs & events
 
+- [Overview](#overview)
+
 ## Installing
 
 ```
