@@ -26,4 +26,4 @@ This web app takes advantage of the following React.js features
 - [ ] combining objects with spread ... operators
 
 
-- [Back to Top](#ala quiz)
+- [Back to Top](#alaquiz)
