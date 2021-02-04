@@ -47,6 +47,14 @@ The following repo utilizes the following syntax standards in development. When 
 .firstwordSecondword
 thisIsAFunction()
 ```
+For css styling and measurements. Always & only use the following:
+```
+rem
+px
+vh
+vw
+%
+```
 
 
 [Back to Top](#ala-quiz)
