@@ -5,6 +5,7 @@ Convergence Design Lab x American Libraries Association - interactive tool to pr
 1. [Overview](#overview)
 1. [Installing for Development](#installing)
 1. [Running](#running)
+1. [Syntax Standards](#syntax-standards)
 
 
 ## Overview
@@ -39,6 +40,13 @@ npm install
 npm run start
 ```
 
+## Syntax Standards
+
+The following repo utilizes the following syntax standards in development. When implementing bugs or fixes, continue to use these standards. All scss, variables and functions are to follow [camelCase](https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841) standards. Example below.
+```
+.firstwordSecondword
+thisIsAFunction()
+```
 
 
 [Back to Top](#ala-quiz)
