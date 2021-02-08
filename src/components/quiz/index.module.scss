@@ -109,16 +109,18 @@
   color: white;
   position: absolute;
   font-size: 0.4rem;
-  bottom: 6vh;
+  bottom: 60px;
   right: 10px;
+  text-shadow: 2px 2px 4px black;
 }
 
 #gifSource {
   color: white;
   position: absolute;
   font-size: 0.4rem;
-  bottom: 11vh;
+  bottom: 100px;
   right: 10px;
+  text-shadow: 2px 2px 4px black;
 }
 
 #gifCaption {
@@ -252,10 +254,10 @@
     font-size: 1.2rem;
   }
   #gifSource {
-    bottom: 12vh;
+    bottom: 120px;
   }
   #sourceContainer {
-    bottom: 7vh;
+    bottom: 80px;
   }
 }
 
