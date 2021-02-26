@@ -43,7 +43,11 @@ export default class Results extends Component {
                   <div className={style.timelineFill} style={{transform: " translateY(-2vh) scaleX(" + this.props.countProp.event / store.questions.length + ")"}}/>
                 </div>
                 <div className={style.descriptionContainer}>
-                  <p>{store.resultText[0].answerOptions[0].answerText}</p>
+                  <p>{store.resultText[0].answerOptions[0].answerText} {" "}
+                    <a href={store.resultText[0].answerOptions[0].redirectLink} rel="noreferrer" target="_blank">
+                      {store.resultText[0].answerOptions[0].redirectText}
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -65,7 +69,11 @@ export default class Results extends Component {
                   <div className={style.timelineFill} style={{transform: " translateY(-2vh) scaleX(" + this.props.countProp.community / store.questions.length + ")"}}/>
                 </div>
                 <div className={style.descriptionContainer}>
-                  <p>{store.resultText[0].answerOptions[1].answerText}</p>
+                  <p>{store.resultText[0].answerOptions[1].answerText} {" "}
+                    <a href={store.resultText[0].answerOptions[1].redirectLink} rel="noreferrer" target="_blank">
+                      {store.resultText[0].answerOptions[1].redirectText}
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -87,7 +95,11 @@ export default class Results extends Component {
                   <div className={style.timelineFill} style={{transform: " translateY(-2vh) scaleX(" + this.props.countProp.creativity / store.questions.length + ")"}}/>
                 </div>
                 <div className={style.descriptionContainer}>
-                  <p>{store.resultText[0].answerOptions[2].answerText}</p>
+                  <p>{store.resultText[0].answerOptions[2].answerText} {" "}
+                    <a href={store.resultText[0].answerOptions[2].redirectLink} rel="noreferrer" target="_blank">
+                      {store.resultText[0].answerOptions[2].redirectText}
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -109,7 +121,11 @@ export default class Results extends Component {
                   <div className={style.timelineFill} style={{transform: " translateY(-2vh) scaleX(" + this.props.countProp.interpersonal / store.questions.length + ")"}}/>
                 </div>
                 <div className={style.descriptionContainer}>
-                  <p>{store.resultText[0].answerOptions[3].answerText}</p>
+                  <p>{store.resultText[0].answerOptions[3].answerText} {" "}
+                    <a href={store.resultText[0].answerOptions[3].redirectLink} rel="noreferrer" target="_blank">
+                      {store.resultText[0].answerOptions[3].redirectText}
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -131,7 +147,11 @@ export default class Results extends Component {
                   <div className={style.timelineFill} style={{transform: " translateY(-2vh) scaleX(" + this.props.countProp.outreach / store.questions.length + ")"}}/>
                 </div>
                 <div className={style.descriptionContainer}>
-                  <p>{store.resultText[0].answerOptions[4].answerText}</p>
+                  <p>{store.resultText[0].answerOptions[4].answerText} {" "}
+                    <a href={store.resultText[0].answerOptions[4].redirectLink} rel="noreferrer" target="_blank">
+                      {store.resultText[0].answerOptions[4].redirectText}
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -140,6 +160,7 @@ export default class Results extends Component {
             <div className={style.resultsHeader} id={style.bottom}>
               <p>Take the free asynchronous <a href="http://www.ala.org/tools/librariestransform/libraries-transforming-communities/online-learning" rel="noreferrer" target="_blank">Libraries Transforming Communities: Facilitation Skills for Small and Rural Libraries eCourse.”</a></p>
             </div>
+            <button className={style.backHome} onClick={(e) => {e.preventDefault(); window.open("http://www.ala.org/tools/librariestransform/libraries-transforming-communities", "_blank")}}>RETURN TO THE LIBRARIES TRANSFORMING COMMUNITIES WEBSITE</button>
           </div>
         </div>
       </div>

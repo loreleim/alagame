@@ -111,6 +111,31 @@
   font-size: 0.75rem;
 }
 
+.backHome {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  background-color: $blue;
+  height: auto;
+  border: none;
+  border-radius: 5rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  padding: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($blue, 10%);
+    transition: ease-in-out 0.3s all;
+  }
+}
+
 /*Media Queries*/
 /* Larger than tablet (also point when grid becomes active) */
 @media (min-width: 680px) {
