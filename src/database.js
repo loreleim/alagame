@@ -68,7 +68,7 @@ class Database {
             ]
         },
         {
-          questionText: "The aspect of  my job that I enjoy the most is..?",
+          questionText: "The aspect of  my job that I enjoy the most is...",
             answerOptions: [
               {
                 answerText: "Hearing about all that's happening in our community",
@@ -150,7 +150,7 @@ class Database {
                 category: "interpersonal",
                 isSelected: false
               },
-              { answerText: "School supplies! Trapper keepers, post-it notes, highlighters, oh my", 
+              { answerText: "School supplies! Trapper Keepers, Post-it Notes, highlighters, oh my", 
                 image: "https://media.giphy.com/media/3vnHhhpVXP8lBrOQhH/giphy.gif",
                 source: "@JulieSmithSchneider",
                 category: "event",
