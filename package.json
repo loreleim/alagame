@@ -2,7 +2,7 @@
   "name": "alagame",
   "version": "1.0.0",
   "private": true,
-  "homepage": "http://loreleim.github.io/alagame",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
