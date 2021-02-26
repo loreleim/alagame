@@ -207,33 +207,33 @@ class Database {
           answerOptions: [
             { answerText: "You don’t have to be a celebrity wedding planner to plan a successful conversation. One of your strengths is that you are drawn to order and organization — great skills for a library worker, especially when it comes to facilitation. Even if your most formal event-planning experience has been hosting a child’s birthday party or planning a trip, you have the basic skills needed to handle the logistics of a discussion.", 
               category: "event",
-              redirectText: "", 
-              redirectLink: "", 
+              redirectText: "Learn how you can flex your event planning muscles as a facilitator!", 
+              redirectLink: "http://www.ala.org/tools/librariestransform/libraries-transforming-communities/online-learning", 
               isSelected: false },
             {
               answerText: "Maybe you are naturally a “people person.” Or maybe you’ve lived in your community for years. Whatever the case, one thing is for certain — you know your community! Community knowledge is one of the strongest skills you can bring to the table when leading a conversation. Your ability to build relationships and partnerships — and knowing “who’s who” — will make it so much easier for you to bring people together.",
               category: "community",
-              redirectText: "", 
-              redirectLink: "", 
+              redirectText: "See how community knowledge will help you lead conversations.", 
+              redirectLink: "http://www.ala.org/tools/librariestransform/libraries-transforming-communities/online-learning", 
               isSelected: false
             },
             { answerText: "You’re prone to thinking outside of the box, and that’s a great strength when it comes to leading a conversation. Every situation comes with challenges; what’s great about you is that you see challenges as opportunities to do something new and interesting. So color outside the lines and use your creativity to find new ways to spark people’s interests in a topic — it will make your conversation stronger!", 
               category: "creativity",
-              redirectText: "", 
-              redirectLink: "", 
+              redirectText: "Put your creative brain to work as a facilitator!", 
+              redirectLink: "http://www.ala.org/tools/librariestransform/libraries-transforming-communities/online-learning", 
               isSelected: false },
             {
               answerText: "Not everyone is drawn to working with people, but you are. This is a massive strength in conversation planning and one that shouldn’t be discounted. Your solid interpersonal and conversational skills will make your job as a facilitator easier — maybe even fun!",
               category: "interpersonal",
-              redirectText: "", 
-              redirectLink: "", 
+              redirectText: "Show off those interpersonal skills as a facilitator!", 
+              redirectLink: "http://www.ala.org/tools/librariestransform/libraries-transforming-communities/online-learning", 
               isSelected: false
             },
             {
               answerText: "Are you a Twitter junkie? Do you have a way with words? Maybe you're the kid that was always setting up a lemonade stand? However you gained your marketing skills, they will serve you well when it comes to planning a conversation — from getting people in the door to telling your community what you learned.",
               category: "outreach",
-              redirectText: "", 
-              redirectLink: "", 
+              redirectText: "Learn how your outreach skills will help make you a great facilitator.", 
+              redirectLink: "http://www.ala.org/tools/librariestransform/libraries-transforming-communities/online-learning", 
               isSelected: false
             }
           ]
