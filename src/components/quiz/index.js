@@ -69,7 +69,7 @@ export default class Quiz extends Component {
             <h2 className={style.questionText}>{questions.questionText}</h2>
               {questions.answerOptions.map((answerOptions, i) => {
               if (q === 1 || q === 2 || q === 4)
-              return <div className={style.imageCard} onClick={() => this.optionClick(answerOptions.category, i, q)}>
+              return <div key={"secondary" + i} className={style.imageCard} onClick={() => this.optionClick(answerOptions.category, i, q)}>
                 <div className={style.imageCrop}>
                 <p id = {q === 2 || q === 4 ? style.gifSource : style.sourceContainer}>{answerOptions.source}</p>
                 <img src={answerOptions.image} alt={"test"}/>
@@ -81,7 +81,7 @@ export default class Quiz extends Component {
               </div>
               if (q === 0 || q === 3 || q === 5)
                 return (
-                  <div className={answerOptions.isSelected === false ? style.optionNotSelected: style.optionSelected}
+                  <div key={"secondary" + i} className={answerOptions.isSelected === false ? style.optionNotSelected: style.optionSelected}
                     id = {q === 2 ? style.quoteContainer : "" || q === 3 ? style.dayContainer : "" || q === 5 ? style.patronContainer: ""}
                     onClick={() => this.optionClick(answerOptions.category, i, q)}>
                     <h5>{answerOptions.answerText}</h5>
