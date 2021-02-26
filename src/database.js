@@ -203,7 +203,7 @@ class Database {
       this.resultText = [
         {
           headerText:
-            "You possess skills, experiences, and/or mindsets that make you good at...",
+            "You already possess skills, experiences, and/or mindsets that will make you a great facilitator! Check out your personalized results below. Remember, these numbers are just a starting point; you are 100% ready to grow in each of these areas.",
           answerOptions: [
             { answerText: "You don’t have to be a celebrity wedding planner to plan a successful conversation. One of your strengths is that you are drawn to order and organization — great skills for a library worker, especially when it comes to facilitation. Even if your most formal event-planning experience has been hosting a child’s birthday party or planning a trip, you have the basic skills needed to handle the logistics of a discussion.", 
               category: "event",
